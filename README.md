@@ -4,6 +4,8 @@ This project is a first attempt at creating population density maps of Peru in Q
 
 The goal was not only to reproduce a similar visual style, but also to better understand how far the same workflow can translate across different countries. One of the main takeaways from this project is that it does not translate automatically. Egypt’s population distribution creates a very strong visual structure for this type of map, while Peru’s population pattern is much more dispersed across the coast, the Andes, and the interior, which makes the cartographic challenge quite different.
 
+![Peru population density map](new_peru.png)
+
 ## Project goals
 
 - Build Peru population density maps in QGIS using GHSL population data
@@ -46,7 +48,7 @@ Created print layouts with:
 
 - black background
 - minimal white national outline
-- title treatment inspired by Mashford Mahute’s style
+- a simple title treatment
 
 ### 6. Terrain experiment
 I attempted to incorporate NASADEM-derived terrain to make the map feel less flat, but the integration process became more complicated than expected, so I stopped at a simpler first iteration rather than forcing a partial result into the final map.
@@ -70,23 +72,11 @@ Egypt’s population density pattern creates an unusually dramatic visual logic 
 
 I also suspect that the final image would benefit from an additional terrain or relief layer, but that part remains unfinished in this version.
 
-## Status
+## Close-up detail
 
-This is not a final polished cartographic product, but a meaningful first QGIS mapping exercise and a useful record of the workflow, limitations, and design decisions involved.
-
-The repository includes both a national-scale version and a closer detail view, since part of the project was realizing that different scales reveal different strengths in the data and composition.
-
-## Outputs
-
-### 1. National-scale version
-A full Peru population density map in QGIS, using a dark layout and minimalist styling inspired by Mashford Mahute’s workflow.
-
-![Peru population density map](outputs/new_peru.png)
-
-### 2. Close-up detail
 A closer look at part of the map, highlighting the finer settlement texture and density patterns that become more visible at a more local scale.
 
-![Peru population density detail](outputs/peru_part1.png)
+![Peru population density detail](peru_part1.png)
 
 ## Notes
 
