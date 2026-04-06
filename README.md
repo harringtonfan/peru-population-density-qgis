@@ -1,15 +1,15 @@
 # Peru Population Density Map in QGIS
 
-This project is a first attempt at creating a population density map of Peru in QGIS using GHSL population data, inspired by Mashford Mahute’s population density mapping workflow.
+This project is a first attempt at creating population density maps of Peru in QGIS using GHSL population data, inspired by Mashford Mahute’s population density mapping workflow.
 
 The goal was not only to reproduce a similar visual style, but also to better understand how far the same workflow can translate across different countries. One of the main takeaways from this project is that it does not translate automatically. Egypt’s population distribution creates a very strong visual structure for this type of map, while Peru’s population pattern is much more dispersed across the coast, the Andes, and the interior, which makes the cartographic challenge quite different.
 
 ## Project goals
 
-- Build a Peru population density map in QGIS using GHSL population data
+- Build Peru population density maps in QGIS using GHSL population data
 - Experiment with raster styling, layout composition, and dark-background cartography
-- Learn a full QGIS workflow involving VRT construction, clipping, pseudocolor symbology, and print layout design
-- Explore whether adding terrain structure could improve the final visual result
+- Learn a QGIS workflow involving VRT construction, clipping, pseudocolor symbology, and print layout design
+- Test whether adding terrain structure could improve the final visual result
 
 ## Data sources
 
@@ -42,7 +42,7 @@ Styled the clipped raster in QGIS using:
 - multiple rounds of color ramp and value range adjustment
 
 ### 5. Layout design
-Created a print layout with:
+Created print layouts with:
 
 - black background
 - minimal white national outline
@@ -74,17 +74,19 @@ I also suspect that the final image would benefit from an additional terrain or 
 
 This is not a final polished cartographic product, but a meaningful first QGIS mapping exercise and a useful record of the workflow, limitations, and design decisions involved.
 
-I may revisit this project later with:
+The repository includes both a national-scale version and a closer detail view, since part of the project was realizing that different scales reveal different strengths in the data and composition.
 
-- a more focused western Peru extent
-- a cleaner terrain layer
-- improved final rendering and legend design
+## Outputs
 
-## Output
+### 1. National-scale version
+A full Peru population density map in QGIS, using a dark layout and minimalist styling inspired by Mashford Mahute’s workflow.
 
-Final exported map:
+![Peru population density map](outputs/new_peru.png)
 
-![Peru population density map](outputs/peru_population_density.png)
+### 2. Close-up detail
+A closer look at part of the map, highlighting the finer settlement texture and density patterns that become more visible at a more local scale.
+
+![Peru population density detail](outputs/peru_part1.png)
 
 ## Notes
 
